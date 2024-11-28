@@ -1,0 +1,64 @@
+:root {
+  --humberger-color: #504f67; /* Màu chính */
+}
+
+.menu-icon {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  background-color: var(--humberger-color);
+  border-radius: 10px;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+}
+
+.menu-icon span::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background-color: var(--humberger-color);
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.menu-icon span::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: var(--humberger-color);
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.menu-icon span::before {
+  top: -6px; /* Gạch trên */
+}
+
+.menu-icon span::after {
+  bottom: -6px; /* Gạch dưới */
+}
+
+/* Khi active: chỉnh độ dài các thanh */
+.menu-icon.active span {
+  width: 10px; /* Ngắn lại gạch chính */
+}
+
+.menu-icon.active span::before {
+  width: 17px; /* Ngắn lại gạch trên cùng một ít */
+}
+
+.menu-icon.active span::after {
+  width: 17px; /* Ngắn lại gạch dưới cùng một ít */
+}

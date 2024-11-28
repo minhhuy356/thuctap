@@ -1,0 +1,13 @@
+@model api.Service.TemplateConfirm
+@using System.Net
+
+<h1>TemplateConfirm</h1>
+
+<div>
+    <h1>Click in button to Veryfy account!</h1>
+    <a href="http://localhost:5062/api/account/confirm-email?userId=@Model.AppUserId&Token=@WebUtility.UrlEncode(Model.Token)" 
+        style="text-decoration: none;">
+            <button>Verify Account</button>
+        </a>
+
+</div>

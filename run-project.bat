@@ -1,0 +1,13 @@
+@echo off
+title Start Backend and Frontend Projects
+
+echo Starting backend...
+start cmd /k "cd api && dotnet watch"
+
+echo Starting frontend...
+start cmd /k "cd web-app && npm run dev"
+
+echo Opening Visual Studio Code...
+start cmd /k "cd . && code ."
+
+echo All projects are starting...

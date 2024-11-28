@@ -1,0 +1,14 @@
+/* Tạo một lớp CSS tùy chỉnh cho menu */
+.custom-menu {
+  background-color: rgb(235, 243, 255, 1); /* Màu nền tùy chỉnh */
+}
+
+/* Nếu cần thay đổi màu nền khi menu được hover */
+.custom-menu .ant-menu-item:hover {
+  background-color: #e0e0e0; /* Màu nền khi hover */
+}
+
+/* Thay đổi màu nền cho các item được chọn */
+.custom-menu .ant-menu-item-selected {
+  background-color: rgb(235, 243, 255, 1); /* Màu nền cho item được chọn */
+}
